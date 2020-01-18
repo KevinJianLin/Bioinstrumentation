@@ -1,7 +1,13 @@
 ---
-title: "Project"
+title: "ENGG 6150 Project"
 output: html_document
 ---
+
+
+Introduction:
+
+pH meter or conductivity meter
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
