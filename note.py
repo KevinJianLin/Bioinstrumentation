@@ -1,3 +1,29 @@
+Jan 8th
+
+Sensor collects physical signal. Transduce transfer to machine.
+
+after machine gets data from transduce, it has analog step.
+
+ADC
+
+Analog-to-Digital
+
+resolution matters, if they are same resolution. we look forward repeatablility
+
+
+first order instrument
+
+60.2% is called tao when they reach steady state;
+
+5 Tao is stead state .
+
+
+Tao is the time to reach from 60% of final destination
+
+
+
+
+
 Jan 15th, 
 
 A   : current unit Ampere
