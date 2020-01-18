@@ -1,6 +1,0 @@
----
-title: "Bioinstrumentation notes"
-author: "Kevin Lin"
-date: "1/10/2020"
-output: html_document
----
