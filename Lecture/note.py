@@ -2,25 +2,34 @@ Jan 8th
 
 Sensor collects physical signal. Transduce transfer to machine.
 
-after machine gets data from transduce, it has analog step.
+after machine gets data from transduce, it has analog step which converts
+to human readable data.
+
+instrument span means maximum of calibration point minus minimum point of
+calibration. 
 
 ADC
 
 Analog-to-Digital
 
+To determine what maximum of instrucment can undergo, 
 resolution matters, if they are same resolution. we look forward repeatablility
 
 
-first order instrument
+first order instrument means the measurement is not as fast as it supposed to be.
+
 
 60.2% is called tao when they reach steady state;
 
-5 Tao is stead state .
+5 Tao is stead state. It basically means how fast it can read the steay state
 
 
-Tao is the time to reach from 60% of final destination
+Tao is the time to reach from 60% of final destination.
 
 
+
+dynamic of instrument refers to outout of vaiable depends on the input
+if it does not change, that means it is static.
 
 
 
@@ -34,27 +43,28 @@ J   : Jouels
 
 
 proton does not move,only electron moves. 
-electron flows a to b then current flow from point b to a 
+electron flows a to b then current flow from point b to a
+electron flows direction is opposite of current
 
-unit 
+
 
 charge is -infinite means from long time ago at moment i intereste
 
 
 voltage, push electron from one point to another unit is Jouels/co
 
-powder is how much energy consume over time
+power is how much energy consume over time
 
 Ampere/hour as you see in battery unit.
 
 
-current is entered in positve, 
+current is entered in positve side, 
 
 for example, battery enter negative side, means they provide energy
 
 
 
-black electrodie is reference,
+black electrodie is reference point,
 red electrode, voltage just meausre the voltage potential;
 
 voltage multiply current is power, I * V =  , the minus power means supply power
@@ -155,6 +165,8 @@ content.
 example 7: every node has own voltage,  has three nets or nodes.
 
 phase angle,
+
+电阻 is called resistor
 
 node, if is entering is negative, exist is positve, 
 
