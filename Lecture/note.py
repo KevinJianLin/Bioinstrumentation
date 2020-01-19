@@ -2,6 +2,9 @@ Jan 8th
 
 Sensor collects physical signal. Transduce transfer to machine.
 
+another step called signal conditioning. basically convert signal into
+human readable data
+
 after machine gets data from transduce, it has analog step which converts
 to human readable data.
 
@@ -35,7 +38,7 @@ if it does not change, that means it is static.
 
 Jan 15th, 
 
-A   : current unit Ampere
+A   : electrical current unit Amperes,also coulombs per second (C/s)
 V   : Voltage
 W   : Power, watts, 
 J   : Jouels
@@ -44,7 +47,9 @@ J   : Jouels
 
 proton does not move,only electron moves. 
 electron flows a to b then current flow from point b to a
-electron flows direction is opposite of current
+The charge per electron is -1.602×10-19 C 
+electron flows direction is opposite of current since current move from
+postive to negative 
 
 
 
