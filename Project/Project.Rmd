@@ -19,6 +19,16 @@ Turbidity unit is Nephelometric Turbidy Units.
 
 read up to lab 6. 
 
+turn the meter I/O on, 
+
+measurement is set to auto
+
+it takes 12 seconds for teh reading to show, measurement is in unit 12 seconds, 
+
+
+
+
+
 _____________________________________________________
 
 
