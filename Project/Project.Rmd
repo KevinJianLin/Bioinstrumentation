@@ -6,6 +6,42 @@ output: word_document
 
 Introduction:
 
+My interest is to build up a turbidity meter.
+
+
+
+lab 5:
+
+
+when you measure turbidity of suspension, do not touch with hands, with out glass surface with Kimwipe. 
+
+Turbidity unit is Nephelometric Turbidy Units. 
+
+read up to lab 6. 
+
+_____________________________________________________
+
+
+
+Hi Kevin,
+
+ 
+
+Attached is the lab manual for the wastewater treatment course I used to teach at Sheridan College. Have a look at Labs 5 and 6. Both used turbidity meters, so you can see two examples of their applications: Lab 5 for jar testing (i.e. flocculation), and Lab 6 for filtration. In both cases, the turbidity reading is used to determine the efficacy of the treatment in removing particulates from water.
+
+ 
+
+Regards,
+
+ 
+
+Rafael
+
+ 
+
+
+
+
 pH meter or conductivity meter
 
 ENGG 6150 Bio-Instrumentation Project
