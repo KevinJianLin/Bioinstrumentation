@@ -27,7 +27,16 @@ it takes 12 seconds for teh reading to show, measurement is in unit 12 seconds,
 
 
 
+Design and development of a quasi-digital sensor
+and instrument for water turbidity measurement
 
+step 1: The sensing element of the turbididy is a photodiode.It transfer optical energy into electrical signal in the order of $\mu$A
+
+step 2: a low-pass filter to remove noise, analog-to-digital converter to interface with a microcontroller. 
+
+step 3: a microcontroller acquires, stores communicates to the computer and displays  turbidity value on an LCD. 
+
+finish page 2
 
 _____________________________________________________
 
