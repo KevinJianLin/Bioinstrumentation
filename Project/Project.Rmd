@@ -1,12 +1,15 @@
 ---
-title: "ENGG 6150 term Project"
+tiitle: "ENGG 6150 term Project Proposal"
+author:"Jian(Kevin), Lin"
 output: word_document
 ---
 
 
 Introduction:
 
-My interest is to build up a turbidity meter.
+My interest is to build up a turbidity meter. Turbidity is used commonly in water treatment to guage the quality of water. 
+
+
 
 
 
