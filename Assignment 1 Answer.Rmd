@@ -1,0 +1,35 @@
+---
+title: "Assignment 1 Answer"
+author: "Kevin Lin"
+date: "03/06/2020"
+output: word_document
+---
+
+
+#Problem 1#
+
+Definitions of below items:
+
+measurand:
+
+
+direct operational mode:
+
+
+invasive and non-invasive:
+
+
+generating mode:
+
+real-time measurements:
+
+interfering input:
+
+correlation coefficient:
+
+zero drift:
+
+problem 2:
+
+refer to lecture 6 slide 47-51
+
