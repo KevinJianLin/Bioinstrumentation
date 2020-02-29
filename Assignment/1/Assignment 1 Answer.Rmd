@@ -11,26 +11,30 @@ output: word_document
 Definitions of below items:
 
 Measurand: When engineer need to measure the quantity of an object, the quantity is used to symbolize the value. 
-The object is referred to measurand.
+The object is referred to measurand. A particular object ,it's physically value is being measured by transducer and 
+be quantified. This process is called measurant. It includes desired input and object of measurement. 
 
 
 Direct operational mode: It can directly communicate through terminal.
 
 
-Invasive and non-invasive:
+Invasive and non-invasive: 
 
 
 Generating mode:
+	
+
+Real-time measurements: It's the value of intentianlly measured object at time of measurement. 
 
 
-Real-time measurements:
+Interfering input: It's a built-in unsensitive parameter that is unintentionally as instrument needs ???
 
 
-Interfering input:
+Correlation coefficient: It's a value that represents how two variables are related to each other. For instance, one variable(x1) has
+value of a set of value ( 1, 2 ,3 4) and the other variable has value of (2,4,6,8). It can be concluded that these two variables are 
+highly correlated as variable 2 just muliplication of variable 2. The formula to calculate correlation coefficient is????? 
 
-Correlation coefficient:
-
-Zero drift:
+Zero drift: microvolt offset and nanovolt offset of instrument which will increase accuracy.
 
 
 problem 2:
