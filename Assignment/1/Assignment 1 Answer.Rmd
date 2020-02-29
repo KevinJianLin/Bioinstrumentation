@@ -1,0 +1,39 @@
+---
+title: "Assignment 1 Answer"
+author: "Kevin Lin"
+date: "03/06/2020"
+output: word_document
+---
+
+
+#Problem 1#
+
+Definitions of below items:
+
+Measurand: When engineer need to measure the quantity of an object, the quantity is used to symbolize the value. 
+The object is referred to measurand.
+
+
+Direct operational mode: It can directly communicate through terminal.
+
+
+Invasive and non-invasive:
+
+
+Generating mode:
+
+
+Real-time measurements:
+
+
+Interfering input:
+
+Correlation coefficient:
+
+Zero drift:
+
+
+problem 2:
+
+refer to lecture 6 slide 47-51
+
