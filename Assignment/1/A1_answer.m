@@ -17,3 +17,56 @@ plot(t,value)
 
 linspace(1,100)%create 100 evenly distributed number from x1 and x2.
 
+type_of_filter = input["please select type of filter"]
+
+Order = input["please enter order of "]
+
+ripple = input[" "]
+
+cut_off = input[" "]
+
+
+
+example 9 slide 44 lecture 6
+
+
+
+F1 = 0.25 ln{coth(Lr/17.32)}
+
+F2 = sinh (2F1/n)
+
+
+
+
+% Lr ripple attenuation in pass-band
+%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
