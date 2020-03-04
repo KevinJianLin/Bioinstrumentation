@@ -12,11 +12,36 @@ Water quality is very crital to human health as well industrial processing. One 
 Traditional signal converter has five components:sensing element, signal conditioning, filter, analog to digital converter, microcontroller. In this project, direct digital readable sensors or quasi-digital sensor will be used. The output of this sensor is
 microcontroller without using analog to digital converter. [1] In this paper, a turbidity meter prototype will be built. To achieve that, literatures will be reviewed and analyzed.
 
+Market Analysis:
+
+Identify the market (potential customers) for your product.According to Future Market Insight, global turbidity meter will reach one billion US dollar in 2029 end. Handhold turbidity meters will reach 400 million by 2029 end. https://www.futuremarketinsights.com/reports/turbidimeter-market
+
+
+Identify businesses that do/could compete with your product: 
+handheld turbidity meter has selling range of $1500 to $ 2100 in canadidan dollars from thermo fisher. 
+
+
+Prepare a business plan for a company to develop your product:
+In the first stage, a funding is required. Potential funding partner includes ...
+
+Design Component 2 – Two Page Report of literatures survey including	Fe. 19, 20
+	journal articles, News Magazines, or from the Internet	
+	
 \newpage
+
+
 Alt-Reference
 
 
 [1] S. Ramesh, M. Sivaramakrishna, G. Rao. Design and development of a quasi-digital sensor and instrument for water turbidity measurement,Measurement Science and Technology, vol. 30, p. 115106, 2019 
+
+
+
+
+
+
+
+
 
 
 
@@ -85,6 +110,8 @@ Each student is expected to design and .build a Bio-instrumentation prototype. P
 o identify the market (potential customers) for your product
 o identify businesses that do/could compete with your product
 o prepare a business plan for a company to develop your product
+
+
 • Technology Assessment
 
 o identify existing technologies to address your chosen bio application o assess weaknesses/limitations of existing technologies
