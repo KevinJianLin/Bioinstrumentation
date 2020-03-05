@@ -20,14 +20,50 @@ Identify the market (potential customers) for your product.According to Future M
 Identify businesses that do/could compete with your product: 
 Handheld turbidity meter has selling range of $1500 to $ 2100 in canadidan dollars from thermo fisher. 
 
+```{r}
+Company  <- c("Protected Elsius","Genome Alberta","Xenon Pharmaceuticals Inc", "Takeda Canada Inc","BIOTECanada","MaRS Discovery District","University of Waterloo","Merck Canada","Pfizer Canada Inc","Valeant Canada","BioAuxilium Research")
+Location <- c("Alberta:Calgary","Alberta:Calgary","British Columbia:Burnaby","Ontarion:Oakville","Ontario:Ottawa","Ontario:Toronto","Ontario :Waterloo","Quebec:Kirkland","Quebec:Kirkland","Quebec:Montreal","Quebec:St Laurent")
+Category <- c("Industry Service & Support","Early stage biotechnology","Early stage biotechnology","Commercial biotechnolgoy","Industry Organization","Incubator & Accelerator","Research and Academia","Commercial biotechnology","Commercial biotechnology", "Industry Service & Support","Commercial biotechnology")
+customers <- data.frame(Company,Location,Category)
+
+knitr::kable(customers)
+```
+
+
+
+
+
+
 The other company Mettler Toledo,InPro 8600i
 In-situ Aqua TROLL 500 multiparameter sensor,
+```{r}
+brand <- c("Oakton","Hach","Extech","Thermo Scientific", "HF Scientific","Lovibond")
+lowest_price <- c(1259.01, 1969.92,913.5,1804.9,1565.48,1613.36)
+highest_price <- c(1617.05, 1969.92,  913.5,2224.82,1565.48,1613.36)
 
-https://www.coleparmer.ca/c/turbidity-meters
+HandheldTurbidityMeter <-data.frame(brand,lowest_price,highest_price)
+
+knitr::kable(HandheldTurbidityMeter,caption = "Major vendors of Handheld Turbidity Meter")
+
+```
+
+
 
 Prepare a business plan for a company to develop your product:
 In the first stage, a funding is required. Potential funding partner includes school enterpreship plan from guelph
-university. Canadian governemnt also provides funding for enterpreship. 
+university. Canadian governemnt also provides funding for enterpreship. There are many funding body in Canada govern body. 
+
+For example, 
+```{r}
+Organization <- c("BDC Small Business Loan","BDC Newcomer Entrepreneur","Canada Small Business Financicing Program","MaRS Investment Accelerator Fund","OCE Market Readiness Program", "OCE Voucher Programs")
+
+Govern_body <- c("Federal","Federal","Federal","Ontario","Ontario","Ontario")
+
+funding_body <- data.frame(funding,body)
+
+knitr::kable(funding_body,caption = "Potential Funding bodies for Turbidity Meter Startup")
+
+```
 
 
 
@@ -49,9 +85,12 @@ Alt-Reference
 [1] S. Ramesh, M. Sivaramakrishna, G. Rao. Design and development of a quasi-digital sensor and instrument for water turbidity measurement,Measurement Science and Technology, vol. 30, p. 115106, 2019 
 
 
+[1] https://www.coleparmer.ca/c/turbidity-meters. 03/05/2020.
 
-
-
+[2] http://www.biotech.ca/biolist/. 03/05/2020. 
+ 
+[3] https://innovation.ised-isde.canada.ca/s/group-groupe?language=en_CA&token=a0B5W000000ArMcUAK.03/05/2020
+[4] https://www.mentorworks.ca/what-we-offer/government-funding/funding-regions/ontario/ . 03/05/2020
 
 
 
