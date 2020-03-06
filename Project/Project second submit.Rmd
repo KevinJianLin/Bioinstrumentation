@@ -1,19 +1,18 @@
 ---
 tiitle: "ENGG 6150 term Project Proposal"
-author:"Jian(Kevin), Lin"
+author: "Jian(Kevin) Lin"
+date: "3/6/2020"
 output: word_document
 ---
-
-
-
+# there should be space between symbol 
 *Market Analysis*
 
-   There are two types of turbidity meter in the market including holdheld and benchtop. According to Future Market Insight, global turbidity meter will reach one billion US dollar in 2029 end. Handhold turbidity meters will reach 400 million by 2029 end. [1]
+    Drinking water and industrial water all require to pass stringent requirement prior to further using. There are many specificications that water needs to pass. One of requirement is Total Dissolved Solid (TDS) and it can measured through turbidity meter. Two types of turbidity meter are commonly used in the market including holdheld and benchtop. According to Future Market Insight, global turbidity meter will reach one billion US dollar in 2029 end. Handhold turbidity meters will reach 400 million by 2029 end. [1] This business proposal is targeting on handhold turbidity meter.  
 
 
 *Current Market Competitors*
     
-
+    There are many brand companies manufacturing this device including Thermo Scientific. Lowest price is $913.5 Canadian dollars and highest one is $2224.82 canadian dollars.Since this is new product, I will make my product lowest in the  market in order to sell quickly. I will set my price as $500 Canadian dollars. After generating quick cash and will the profit to manufacture more products. 
 ```{r}
 brand <- c("Oakton","Hach","Extech","Thermo Scientific", "HF Scientific","Lovibond")
 lowest_price <- c(1259.01, 1969.92,913.5,1804.9,1565.48,1613.36)
@@ -26,6 +25,27 @@ knitr::kable(HandheldTurbidityMeter,caption = "Major vendors of Handheld Turbidi
 ```
 
 
+*Busniess Plan*
+
+    In the first stage, a funding is required. Potential funding partner includes school enterpreship plan from guelph
+university. Canadian governemnt also provides funding for enterpreship. There are many funding body in Canada govern body. [4]
+
+```{r}
+Organization <- c("BDC Small Business Loan","BDC Newcomer Entrepreneur","Canada Small Business Financicing Program","MaRS Investment Accelerator Fund","OCE Market Readiness Program", "OCE Voucher Programs")
+
+Govern_body <- c("Federal","Federal","Federal","Ontario","Ontario","Ontario")
+
+funding_body <- data.frame(Organization,Govern_body)
+
+knitr::kable(funding_body,caption = "Potential Funding bodies for Turbidity Meter Startup")
+
+```
+
+     Second stage is manufactuing sample step, we will manufacture just a few samples by myself for demostration only. I can just use my garage to assembly turbidity meter.  
+
+     Third stage is marketing step,I will call all of water related company to see they wants to try our new product. Below shows potential customers. In the early stage, I will send out emails to them or call them to promote this product. 
+     
+     
 ```{r}
 Company  <- c("Protected Elsius","Genome Alberta","Xenon Pharmaceuticals Inc", "Takeda Canada Inc","BIOTECanada","MaRS Discovery District","University of Waterloo","Merck Canada","Pfizer Canada Inc","Valeant Canada","BioAuxilium Research")
 Location <- c("Alberta:Calgary","Alberta:Calgary","British Columbia:Burnaby","Ontarion:Oakville","Ontario:Ottawa","Ontario:Toronto","Ontario :Waterloo","Quebec:Kirkland","Quebec:Kirkland","Quebec:Montreal","Quebec:St Laurent")
@@ -36,27 +56,8 @@ knitr::kable(customers)
 ```
 
 
-*Busniess Plan*
 
-    In the first stage, a funding is required. Potential funding partner includes school enterpreship plan from guelph
-university. Canadian governemnt also provides funding for enterpreship. There are many funding body in Canada govern body. 
-
-```{r}
-Organization <- c("BDC Small Business Loan","BDC Newcomer Entrepreneur","Canada Small Business Financicing Program","MaRS Investment Accelerator Fund","OCE Market Readiness Program", "OCE Voucher Programs")
-
-Govern_body <- c("Federal","Federal","Federal","Ontario","Ontario","Ontario")
-
-funding_body <- data.frame(funding,body)
-
-knitr::kable(funding_body,caption = "Potential Funding bodies for Turbidity Meter Startup")
-
-```
-
-     Second stage is manufactuing step, we will manufacture just a few samples by myself for demo only. 
-
-     Third stage is marketing step,I will call all of water related company to see they wants to try our new product. 
-
-    Forth stage is to manufacture these instrument, a small lab or warewarehouse can be used to manufacture these equipement. Then send t out. 
+    Forth stage is to proceed massive manufacture stage. A lab or manufacturing site will be used to manufacture these equipements. 
 
 
 \newpage
@@ -64,13 +65,15 @@ knitr::kable(funding_body,caption = "Potential Funding bodies for Turbidity Mete
 
 Alt-Reference
 
-[1] https://www.coleparmer.ca/c/turbidity-meters. 03/05/2020.
+[1] https://www.futuremarketinsights.com/reports/turbidimeter-market. 03/05/2020
 
-[2] http://www.biotech.ca/biolist/. 03/05/2020. 
+[2] https://www.coleparmer.ca/c/turbidity-meters. 03/05/2020.
+
+[3] http://www.biotech.ca/biolist/. 03/05/2020. 
  
-[3] https://innovation.ised-isde.canada.ca/s/group-groupe?language=en_CA&token=a0B5W000000ArMcUAK.03/05/2020
+[4] https://innovation.ised-isde.canada.ca/s/group-groupe?language=en_CA&token=a0B5W000000ArMcUAK.03/05/2020
 
-[4] https://www.mentorworks.ca/what-we-offer/government-funding/funding-regions/ontario/ . 03/05/2020
+[5] https://www.mentorworks.ca/what-we-offer/government-funding/funding-regions/ontario/ . 03/05/2020
 
 
 
