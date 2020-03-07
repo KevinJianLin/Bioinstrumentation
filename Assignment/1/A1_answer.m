@@ -3,8 +3,6 @@
 %refer to lecture 6 slide 47
 
 
-%refer to lecture 6 slide 47
-
 %to claim a numeric vector
 
 %t = [1 , 2, 3 ,4, 5]
@@ -29,18 +27,21 @@
 
 %
 
-%F1 = 0.25 ln{coth(Lr/17.32)} => slide 42
+%F1 = 0.25 ln{coth(Lr/17.32)} => slide 42, what is F1 and F2??
 
 %F2 = sinh (2F1/n)
 
 % Lr ripple attenuation in pass-band
-% question is asking for frequncy response for an equal-ripple where H(w) which is V0 /Vs, not sure what does H stand for.
+
+% question is asking for frequncy response for an equal-ripple where H(w) which is V0 /Vs, 
+
 % H = 1 + F0 
+
 % n = order of filter 
-%x-axis of repsonse
-% curve is cut-off frequency and y-axis is 
 
+% x-axis is cutoff frequency at different values of repsonse
 
+% curve is cut-off frequency and y-axis is Vo / Vs
 
 ripple = 0.05 
 order = 3
@@ -54,18 +55,15 @@ F2 = 1.1371
 
 % we are talking about filter here
 
-% The purpose of op amp is to obtain gain of voltage as output
-% after voltage gain, signal become stronger???
+% The purpose of op amp is to obtain gain of voltage as output after voltage gain, signal become stronger???
 
 %RG refers to resistor gain in amplifier. 
 
-
-
 %low pass filter => only low frequency can pass through, high
-%frequency filter out. From 0Hz to critical frequency, other
-% frequency filter out
 
-%band refer to frequqncy range, pass band refers to
+%frequency filter out. From 0Hz to critical frequency, other
+
+% frequency filter out ,band refer to frequqncy range, pass band refers to
 % the range of frequency that signal passes
 %stop band is the frequency range that filter filter them out
 
