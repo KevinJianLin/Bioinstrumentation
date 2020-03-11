@@ -30,7 +30,7 @@ end
 
 for i = 1:length(x)
     C1  = x(i)
-    C3_interim  = 2 * x(i) * C21(i)  - C1
+    C3_interim  = 2 * x(i) * C2_final(i)  - C1
     C3_final = [C3_final,C3_interim]
 end 
 
