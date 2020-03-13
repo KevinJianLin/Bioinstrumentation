@@ -21,7 +21,8 @@ It can directly communicate through terminal.
 
 
 **Invasive and non-invasive:**  
-To be developed more.....
+non-Invasive sensors is device that do not require biofluids by take samples from human body. Optical transducer is one of them. 
+
 
 **Generating mode:**  
 To be developed more....
