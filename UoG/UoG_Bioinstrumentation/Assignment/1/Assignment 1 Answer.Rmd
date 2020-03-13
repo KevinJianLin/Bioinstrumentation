@@ -21,10 +21,16 @@ It can directly communicate through terminal.
 
 
 **Invasive and non-invasive:**  
-To be developed more.....
+Non-Invasive sensors is device that do not require biofluids by take samples from human body. Optical transducer is one of them. 
+In opposite, invasive sensor require input of sample. Non-invasive is getting popular in detecting of blood sugar since it does not 
+require blood sample. 
+
 
 **Generating mode:**  
-To be developed more....
+In this mode, induction motor runs faster than synchronous speed of the motor. It occurs when the rotor is connected to a primer mover. 
+The motor works as an induction generator. 
+
+Breaking mode refers to actual speed of motor is more than synchronous speed of the motor
 
 	
 
