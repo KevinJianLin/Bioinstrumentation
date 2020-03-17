@@ -1,7 +1,7 @@
 ---
-title: "Bininstrumentation Assignment 1 Answer Version 1"
+title: "Bininstrumentation Assignment 1 Answer Version 2"
 author: "Kevin Lin"
-date: "03/08/2020"
+date: "03/16/2020"
 output: word_document
 ---
 
@@ -39,7 +39,7 @@ It's the value of intentianlly measured object at time of measurement.
 
 
 **Interfering input:**   
-It's a built-in unsensitive parameter that is unintentionally as instrument needs. To be developed more...
+It's a built-in unsensitive parameter that is unintentionally as instrument needs. 
 
 
 **Correlation coefficient:**   
@@ -55,5 +55,7 @@ microvolt offset and nanovolt offset of instrument which will increase accuracy.
 refer to attached A1_answer.m
 
 **problem 3:**  
-To be continued
+Just drew the configuration. 
+!["question 3 configuration using EAGLE"](/Users/Kevin/Documents/MENG/Courses/UoG_Bioinstrumentation/Assignment/1/Q3.png)
+
 
