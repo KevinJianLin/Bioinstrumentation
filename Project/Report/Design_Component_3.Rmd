@@ -1,36 +1,43 @@
 ---
-tiitle: "ENGG 6150 term Project Proposal"
-author:"Jian(Kevin), Lin"
+tiitle: "ENGG 6150 term Component Design 3"
+author: "Jian(Kevin), Lin"
 output: word_document
+
 ---
 
 
-Circuit Design:
+*Turbidity Meter Circuit Design:*
 
-There are two turbididty sensors have been used in this project.
+     Principle of turbidity meter sensor is to use optic principle to estimate transmittance rate and scattering rate. It's similar to spectrometer which detects optical density. Water serves as blank for turbidity measurement. Phototransistor which is part of turbidity meter sensor and used to collect lights that pass through haze. photoresistor is the component that connects to the phototransistor. photodiodes is used to convert light into current because emitted sun light has photon. Photon is converted into electron which generates current. That's also the princinple of converting solar energy into electricity.  If light density is higher, it wil have hight signal. After it collects the light, it will generate current. It can be collected to a resistor followed by op-amp to boost signal. The output of phototransitor is defined as base area of it and current gain of transitor.
+
+     Sample has higher amount of haze or total suspended solid(TSS) will decrease light transmittance meaning the turbidity sensor reading is lower. Sample with lower amount of haze will have increase reading. The unit for turbidity meter is NTU.
+     
+    The general flow of detecting equipment is sensing element, signal conditioning, filter, analog to digital converter and microcontroler. There are two turbididty sensors have been used in this project and comparison will be done to verify which one outperform (Figure 1-3). Analog signal output is sinusoidal and digital signal output is square signal in binary format. In otherwords latter one is discrete value. Keyestudio sensor has ability to change between these two modes. Analog signal band pass is low but digital signal band pass is high.   
+    
+    
+    
+![Figure 1: KEYESTUDIO Tubidity meter sensor](/Users/Kevin/Documents/MENG/Courses/UoG_Bioinstrumentation/Project/Report/s1.jpeg)
+
+![Figure 2: KEYESTUDIO Tubidity meter sensor](/Users/Kevin/Documents/MENG/Courses/UoG_Bioinstrumentation/Project/Report/s4.jpeg)
+    
+![Figure 3: KEYESTUDIO Tubidity meter sensor](/Users/Kevin/Documents/MENG/Courses/UoG_Bioinstrumentation/Project/Report/s6.jpeg)
+    
 
 ```{r}
-brand    <- c("KEYESTUDIO","Hilitand")
+brand <- c("KEYESTUDIO","Hilitand")
 Operating_Voltage  <- c("DC 5V","DC 5V")
 Operating_current <- c("11mA","30mA")
-detection_Range <-c ("0-4550NTU",)
-Principle <- c("convert current signal into voltage output through circuit")
+detection_Range <-c ("0-4550NTU","N/A")
+
+d <- data.frame(brand,Operating_current,Operating_Voltage,detection_Range)
+
+knitr::kable(d,caption = "Table 1:Turbidity Meter Sensor Comparison",align = "c")
 ```
 
-*Definition:*
 
-Phototransistor which is used to collect lights.  If light density is hihger, it wil have hight signal. After it collects the light, it will generate current. It can be collected to a resistor followed by op-amp to boost signal. The output of phototransitor is defined as base area of it and current gain of transitor.    
+![Figure 4: Turbidity meter sensor circuit plotted by EAGLE AUTODESK Software](/Users/Kevin/Documents/MENG/Courses/UoG_Bioinstrumentation/Project/Report/t.jpeg)
 
-photoresistor is the component that connects to the phototransistor. 
-
-photodiodes is used to convert light into current because emitted sun light has photon. Photon is converted into electron which generates current. That's also the princinple of converting solar energy into electricity.
-
-
-    Principle of turbidity meter sensor is to use optic principle to estimate transmittance rate and scattering rate. It's similar to spectrometer which detects optical density. Water serves as blank for turbidity measurement. Sample has higher amount of haze will increase light transmittance meaning the turbidity sensor is high. Sample with lower amount of haze will have lower reading from turbididty sensor. The unit for turbidity meter is NTU.
-
-
-   The general flow of detecting equipment is sensing element, signal conditioning, filter, analog to digital converter and microcontroler. 
-
+   Figure 4 has shown the circuit schematic. 
 
 
 
