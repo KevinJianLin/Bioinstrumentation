@@ -55,6 +55,32 @@ microvolt offset and nanovolt offset of instrument which will increase accuracy.
 refer to attached A1_answer.m
 
 **problem 3:**  
+```{r}
+source_voltage = 2
+
+f_L = 100
+
+f_H = 600
+
+R_1 = 1000
+
+R_2 = 1000
+
+gain_ratio_dB = 10
+
+C_1 = (1/(f_H * 2 * 3.14 *R_1))*1000000
+ 
+C_2 =  (1/(f_L * 2 * 3.14 *R_2))*1000000
+
+gain_ratio_normal = 10^(gain_ratio_dB/20)
+
+sprintf("First capacitance is %.2fuF",C_1)
+sprintf("Second capacitance is %.2fuF",C_2)
+sprintf("output voltage divided by input voltage is %.3f",gain_ratio_normal)
+  
+```
+
+
 Just drew the configuration. 
 !["question 3 configuration using EAGLE"](/Users/Kevin/Documents/MENG/Courses/UoG_Bioinstrumentation/Assignment/1/Q3.png)
 
