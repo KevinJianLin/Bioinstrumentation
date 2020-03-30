@@ -1,0 +1,22 @@
+---
+tiitle: "ENGG 6150 term Component Design 3"
+author: "Jian(Kevin), Lin"
+output: word_document
+
+---
+
+
+ardinuo => babala in =>we need buy from amazon==> power supply
+
+
+    
+
+
+
+Alt-Reference
+
+
+[1] S. Ramesh, M. Sivaramakrishna, G. Rao. Design and development of a quasi-digital sensor and instrument for water turbidity measurement,Measurement Science and Technology, vol. 30, p. 115106, 2019 
+
+
+
