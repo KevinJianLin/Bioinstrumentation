@@ -1,7 +1,7 @@
 ---
-title: "Bininstrumentation Assignment 1 Answer Version 2"
+title: "Bininstrumentation Assignment 1 Answer Version 4"
 author: "Kevin Lin"
-date: "03/16/2020"
+date: "03/29/2020"
 output: word_document
 ---
 
@@ -55,7 +55,35 @@ microvolt offset and nanovolt offset of instrument which will increase accuracy.
 refer to attached A1_answer.m
 
 **problem 3:**  
-Just drew the configuration. 
-!["question 3 configuration using EAGLE"](/Users/Kevin/Documents/MENG/Courses/UoG_Bioinstrumentation/Assignment/1/Q3.png)
+I have shown my calucation and simulation below. The plot does not look like band pass filter response and I don't know here I did wrong.
+
+```{r}
+source_voltage = 2
+
+f_L = 100
+
+f_H = 600
+
+R_1 = 1000
+
+R_2 = 3162
+
+gain_ratio_dB = 10
+
+C_1 = (1/(f_H * 2 * 3.14 *R_1))*1000000
+ 
+C_2 =  (1/(f_L * 2 * 3.14 *R_2))*1000000
+
+gain_ratio_normal = 10^(gain_ratio_dB/20)
+
+sprintf("First resistor R1 is %.2f ohm",R_1)
+sprintf("second resistor R2 is %.2f ohm",R_2)
+sprintf("First capacitance C1 is %.2f uF",C_1)
+sprintf("Second capacitance C2 is %.2f uF",C_2)
+sprintf("output voltage divided by input voltage is %.3f",gain_ratio_normal)
+  
+```
 
 
+!["Question 3 simulation parameters"](/Users/Kevin/Documents/MENG/Courses/UoG_Bioinstrumentation/Assignment/1/Simulation Parameter.png)
+!["Question 3 simulation result"](/Users/Kevin/Documents/MENG/Courses/UoG_Bioinstrumentation/Assignment/1/Result.png)
