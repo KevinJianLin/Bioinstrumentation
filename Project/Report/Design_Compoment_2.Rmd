@@ -1,5 +1,5 @@
 ---
-tiitle: "ENGG 6150 term Project Proposal"
+title: "ENGG 6150 term Project Proposal"
 author: "Jian(Kevin) Lin"
 date: "3/6/2020"
 output: word_document
