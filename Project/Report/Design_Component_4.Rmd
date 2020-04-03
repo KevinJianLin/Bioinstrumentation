@@ -1,22 +1,18 @@
 ---
-tiitle: "ENGG 6150 term Component Design 3"
-author: "Jian(Kevin), Lin"
+title: "ENGG 6150 Term Project Component Design 4"
+author: "Jian Bin(Kevin), Lin"
+date: "Apr/02/2020"   
 output: word_document
+---  
 
----
+\newpage  
 
-
-ardinuo => babala in =>we need buy from amazon==> power supply
-
-
-    
+Component 4:  
+![Figure 1: complete final tubidity meter setup](/Users/Kevin/Documents/MENG/Courses/UoG_Bioinstrumentation/Project/Report/audrui.jpg)
 
 
 
-Alt-Reference
-
-
-[1] S. Ramesh, M. Sivaramakrishna, G. Rao. Design and development of a quasi-digital sensor and instrument for water turbidity measurement,Measurement Science and Technology, vol. 30, p. 115106, 2019 
+  Turbidity sensor has connected it analogue controller. Analougue controller is connected to Arduino. Arduino is connected to a laptop using a cable. Lights on both arduino and controller are flashing which means these components works fine.  
 
 
 

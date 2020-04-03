@@ -1,6 +1,7 @@
 ---
-tiitle: "ENGG 6150 term Component Design 3"
+title: "ENGG 6150 term Component Design 3"
 author: "Jian(Kevin), Lin"
+date: "Apr/02/2020"
 output: word_document
 
 ---
