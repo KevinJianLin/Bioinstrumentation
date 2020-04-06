@@ -66,15 +66,18 @@ f_H = 600
 
 R_1 = 1000
 
-R_2 = 3162
+
 
 gain_ratio_dB = 10
 
-C_1 = (1/(f_H * 2 * 3.14 *R_1))*1000000
- 
-C_2 =  (1/(f_L * 2 * 3.14 *R_2))*1000000
+C_1 <-  (1/(f_H * 2 * 3.14 *R_1))*1000000
 
-gain_ratio_normal = 10^(gain_ratio_dB/20)
+gain_ratio_normal <- 10^(gain_ratio_dB/20)
+
+
+R_2 <- R_1 * gain_ratio_normal*2
+ 
+C_2 <-  (1/(f_L * 2 * 3.14 *R_2))*1000000
 
 sprintf("First resistor R1 is %.2f ohm",R_1)
 sprintf("second resistor R2 is %.2f ohm",R_2)
