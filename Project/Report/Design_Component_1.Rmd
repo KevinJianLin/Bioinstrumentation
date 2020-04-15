@@ -31,8 +31,6 @@ Manufacturer: Emerson, Palintest, Thermo Fisher Scientific, Turner Design, Merck
 
 
 =======
->>>>>>> 2b2691804fe974e368c036b0ef06592aac8e64c9
-
 
 \newpage
 Alt-Reference

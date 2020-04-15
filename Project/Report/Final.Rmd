@@ -1,0 +1,127 @@
+---
+output: word_document
+---  
+
+ENGG 6150 Term Project Component Design 4    
+Student: Jian Bin(Kevin), Lin"  
+Email: jlin17@uoguelph.ca  
+Instructor: Dr.Maher Bakri-Kassem  
+Date: Apr/01/2020   
+
+\newpage  
+
+Introduction:
+
+Water quality is very crital to human health as well industrial processing. One of devices that can be used to determine water quality is turbidity meter. 
+
+Traditional signal converter has five components. It includes sensing element, signal conditioning, filter, analog to digital converter, microcontroller. In this project, direct digital readable sensors or quasi-digital sensor will be used. The output of this sensor is
+microcontroller without using analog to digital converter. [1] In this paper, a turbidity meter prototype will be built. To achieve that, literatures will be reviewed and analyzed.
+
+
+Component Design 4:
+ 
+     Turbidity sensor has connected it analogous controller to obtain sensor reading. This signal needs to be furhter manipulated conditioned into human readable data. In this case, Analougue controller is connected to Arduino. Arduino is connected to a laptop using a cable. Software Arduino is downloaded. The reading is voltage and needs to change to NTU. The formula to convert voltage to NTU is: 
+     
+NTU = -1120.4*$\sqrt(voltage)$ + 5742.3*voltage - 4353.8  
+
+
+
+
+![Figure 1: complete final tubidity meter setup](C:/Users/klin/Desktop/KL/Training/Master/Courses/UoG_Bioinstrumentation/Project/Report/picture/audrui.jpg)
+
+
+*Market Analysis*
+
+    Drinking water and industrial water all require to pass stringent requirement prior to further using. There are many specificications that water needs to pass. One of requirement is Total Dissolved Solid (TDS) and it can measured through turbidity meter. Two types of turbidity meter are commonly used in the market including holdheld and benchtop. According to Future Market Insight, global turbidity meter will reach one billion US dollar in 2029 end. Handhold turbidity meters will reach 400 million by 2029 end. [1] This business proposal is targeting on handhold turbidity meter.  
+
+
+*Current Market Competitors*
+    
+    There are many brand companies manufacturing this device including Thermo Scientific. Lowest price is $913.5 Canadian dollars and highest one is $2224.82 canadian dollars.Since this is new product, I will make my product lowest in the  market in order to sell quickly. I will set my price as $500 Canadian dollars. After generating quick cash and will the profit to manufacture more products. 
+```{r}
+brand <- c("Oakton","Hach","Extech","Thermo Scientific", "HF Scientific","Lovibond")
+lowest_price <- c(1259.01, 1969.92,913.5,1804.9,1565.48,1613.36)
+highest_price <- c(1617.05, 1969.92,  913.5,2224.82,1565.48,1613.36)
+
+HandheldTurbidityMeter <-data.frame(brand,lowest_price,highest_price)
+
+knitr::kable(HandheldTurbidityMeter,caption = "Major vendors of Handheld Turbidity Meter")
+
+```
+
+
+*Busniess Plan*
+
+    In the first stage, a funding is required. Potential funding partner includes school enterpreship plan from guelph
+university. Canadian governemnt also provides funding for enterpreship. There are many funding body in Canada govern body. [4]
+
+```{r}
+Organization <- c("BDC Small Business Loan","BDC Newcomer Entrepreneur","Canada Small Business Financicing Program","MaRS Investment Accelerator Fund","OCE Market Readiness Program", "OCE Voucher Programs")
+
+Govern_body <- c("Federal","Federal","Federal","Ontario","Ontario","Ontario")
+
+funding_body <- data.frame(Organization,Govern_body)
+
+knitr::kable(funding_body,caption = "Potential Funding bodies for Turbidity Meter Startup")
+
+```
+
+     Second stage is manufactuing sample step, we will manufacture just a few samples by myself for demostration only. I can just use my garage to assembly turbidity meter.  
+
+     Third stage is marketing step,I will call all of water related company to see they wants to try our new product. Below shows potential customers. In the early stage, I will send out emails to them or call them to promote this product. 
+     
+     
+```{r}
+Company  <- c("Protected Elsius","Genome Alberta","Xenon Pharmaceuticals Inc", "Takeda Canada Inc","BIOTECanada","MaRS Discovery District","University of Waterloo","Merck Canada","Pfizer Canada Inc","Valeant Canada","BioAuxilium Research")
+Location <- c("Alberta:Calgary","Alberta:Calgary","British Columbia:Burnaby","Ontarion:Oakville","Ontario:Ottawa","Ontario:Toronto","Ontario :Waterloo","Quebec:Kirkland","Quebec:Kirkland","Quebec:Montreal","Quebec:St Laurent")
+Category <- c("Industry Service & Support","Early stage biotechnology","Early stage biotechnology","Commercial biotechnolgoy","Industry Organization","Incubator & Accelerator","Research and Academia","Commercial biotechnology","Commercial biotechnology", "Industry Service & Support","Commercial biotechnology")
+customers <- data.frame(Company,Location,Category)
+
+knitr::kable(customers)
+```
+
+
+
+    Forth stage is to proceed massive manufacture stage. A lab or manufacturing site will be used to manufacture these equipements. 
+
+
+
+
+*Turbidity Meter Circuit Design:*
+
+     Principle of turbidity meter sensor is to use optic principle to estimate transmittance rate and scattering rate. It's similar to spectrometer which detects optical density. Water serves as blank for turbidity measurement. Phototransistor which is part of turbidity meter sensor and used to collect lights that pass through haze. photoresistor is the component that connects to the phototransistor. photodiodes is used to convert light into current because emitted sun light has photon. Photon is converted into electron which generates current. That's also the princinple of converting solar energy into electricity.  If light density is higher, it wil have hight signal. After it collects the light, it will generate current. It can be collected to a resistor followed by op-amp to boost signal. The output of phototransitor is defined as base area of it and current gain of transitor.
+
+     Sample has higher amount of haze or total suspended solid(TSS) will decrease light transmittance meaning the turbidity sensor reading is lower. Sample with lower amount of haze will have increase reading. The unit for turbidity meter is NTU.
+     
+    The general flow of detecting equipment is sensing element, signal conditioning, filter, analog to digital converter and microcontroler. There are two turbididty sensors have been used in this project and comparison will be done to verify which one outperform (Figure 1-3). Analog signal output is sinusoidal and digital signal output is square signal in binary format. In otherwords latter one is discrete value. Keyestudio sensor has ability to change between these two modes. Analog signal band pass is low but digital signal band pass is high.   
+    
+    
+      Turbidity sensor has connected it analogous controller to obtain sensor reading. This signal needs to be furhter manipulated conditioned into human readable data. In this case, Analougue controller is connected to Arduino. Arduino is connected to a laptop using a cable. Software Arduino is downloaded. The reading is voltage and needs to change to NTU. The formula to convert voltage to NTU is: 
+     
+NTU = -1120.4*$\sqrt(voltage)$ + 5742.3*voltage - 4353.8  
+
+
+
+
+
+Alt-Reference
+
+
+[1] S. Ramesh, M. Sivaramakrishna, G. Rao. Design and development of a quasi-digital sensor and instrument for water turbidity measurement,Measurement Science and Technology, vol. 30, p. 115106, 2019 
+
+
+
+[1] https://www.futuremarketinsights.com/reports/turbidimeter-market. 03/05/2020
+
+[2] https://www.coleparmer.ca/c/turbidity-meters. 03/05/2020.
+
+[3] http://www.biotech.ca/biolist/. 03/05/2020. 
+ 
+[4] https://innovation.ised-isde.canada.ca/s/group-groupe?language=en_CA&token=a0B5W000000ArMcUAK.03/05/2020
+
+[5] https://www.mentorworks.ca/what-we-offer/government-funding/funding-regions/ontario/ . 03/05/2020
+
+
+
+
+
