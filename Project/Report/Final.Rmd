@@ -18,6 +18,32 @@ Traditional signal converter has five components. It includes sensing element, s
 microcontroller without using analog to digital converter. [1] In this paper, a turbidity meter prototype will be built. To achieve that, literatures will be reviewed and analyzed.
 
 
+   All of materials have ability to absorb light(sun light) in the form of wave. Human eye can detect light wavelenght between 400 nm and 700 nm. Ultravisible light is not detectable by human eye. Transmittance(T) is defined as amount of light pass through a water sample. Forumula is ratio between transmitted light (I) and light intensity $I_0$.  
+   
+   T = $\frac{I}{I_0}$ = $e^{-\tau}$ = $10^{-A}$  
+   where $\tau$ is optical depth or opacity of the medium. A is absorbance. 
+   
+   Formula can be further transform to  
+   
+   A = -10$log_{10}(10)$  
+   
+   Beer-Lamber law stats that  
+   
+   A = $\epsilon$ c l  
+   
+   where $\epsilon$ refers to absorptivity of the absorbers in suspension. Symbol c refers to concentration and symbol l referst to path length. Concentration of absorber multiply absorbtivity is attenuation coefficient denoted by $\sum$. Then equation becomes  
+   
+   
+A = $\sum$ l  
+   
+   
+   
+   
+   
+   
+   
+   
+
 Component Design 4:
  
      Turbidity sensor has connected it analogous controller to obtain sensor reading. This signal needs to be furhter manipulated conditioned into human readable data. In this case, Analougue controller is connected to Arduino. Arduino is connected to a laptop using a cable. Software Arduino is downloaded. The reading is voltage and needs to change to NTU. The formula to convert voltage to NTU is: 
