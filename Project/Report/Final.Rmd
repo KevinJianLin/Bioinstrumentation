@@ -103,6 +103,9 @@ knitr::kable(customers)
 NTU = -1120.4*$\sqrt(voltage)$ + 5742.3*voltage - 4353.8  
 
 
+Any non-dissolved material in water can increase turbidity. when the light pass through photodiode to phototransitor in water, amount of light pass through depends on the total suspended solid.
+
+
 
 
 
