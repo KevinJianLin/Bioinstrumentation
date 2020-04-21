@@ -40,8 +40,8 @@ A = $\sum$ l
    
    
    
-   
-   
+   photodiodes is a type of sensor. It's used transimpedance amplifier to convert current into output voltage. 
+   current flows from cathode into anode when light strikes photodiode's area. 
    
 
 Component Design 4:
