@@ -165,7 +165,9 @@ Any non-dissolved material in water can increase turbidity. when the light pass 
 
 [1] S. Ramesh, M. Sivaramakrishna, G. Rao. Design and development of a quasi-digital sensor and instrument for water turbidity measurement,Measurement Science and Technology, vol. 30, p. 115106, 2019 
 
+[2] B. Kichener, J. Wainwright, A. Parsons. A review of the principles of turbidity measurement. Progress in Physical Geography, vol. 41, pp. 620-642. 2017
 
+[3] W.Hakim, L. Hasanah, B. Mulyanti and A. Aminudin. Characterization of turbidity water sensor SEN0189 on the changes of total suspended solids in the water. Journals of Physics:Conferences Series. Vol. 1280. p.022064. 2019.  
 
 [1] https://www.futuremarketinsights.com/reports/turbidimeter-market. 03/05/2020
 
