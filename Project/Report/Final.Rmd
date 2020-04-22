@@ -12,58 +12,14 @@ Date: Apr/01/2020
 
 **Introduction:**  
 
-<<<<<<< HEAD
+
 Water quality is very crital to human health as well as industrial processing. There are many parameters that are used to determine water quality such as pH, conductivity and total dissolved solid.One of devices that can be used to determine water quality is turbidity meter. Traditional signal converter has five components. It includes sensing element, signal conditioning, filter, analog to digital converter, microcontroller. In this project, this prototype was adopted. A turbidity meter has been successfully built and is cheaper than market price. 
+
 **Market Analysis:**  
-=======
-Water quality is very crital to human health as well industrial processing. One of devices that can be used to determine water quality is turbidity meter. 
-
-Traditional signal converter has five components. It includes sensing element, signal conditioning, filter, analog to digital converter, microcontroller. In this project, direct digital readable sensors or quasi-digital sensor will be used. The output of this sensor is
-microcontroller without using analog to digital converter. [1] In this paper, a turbidity meter prototype will be built. To achieve that, literatures will be reviewed and analyzed.
-
-
-   All of materials have ability to absorb light(sun light) in the form of wave. Human eye can detect light wavelenght between 400 nm and 700 nm. Ultravisible light is not detectable by human eye. Transmittance(T) is defined as amount of light pass through a water sample. Forumula is ratio between transmitted light (I) and light intensity $I_0$.  
-   
-   T = $\frac{I}{I_0}$ = $e^{-\tau}$ = $10^{-A}$  
-   where $\tau$ is optical depth or opacity of the medium. A is absorbance. 
-   
-   Formula can be further transform to  
-   
-   A = -10$log_{10}(10)$  
-   
-   Beer-Lamber law stats that  
-   
-   A = $\epsilon$ c l  
-   
-   where $\epsilon$ refers to absorptivity of the absorbers in suspension. Symbol c refers to concentration and symbol l referst to path length. Concentration of absorber multiply absorbtivity is attenuation coefficient denoted by $\sum$. Then equation becomes  
-   
-   
-A = $\sum$ l  
-   
-   
-   
-   
-   
-   photodiodes is a type of sensor. It's used transimpedance amplifier to convert current into output voltage. 
-   current flows from cathode into anode when light strikes photodiode's area. 
-   
-
-Component Design 4:
- 
-     Turbidity sensor has connected it analogous controller to obtain sensor reading. This signal needs to be furhter manipulated conditioned into human readable data. In this case, Analougue controller is connected to Arduino. Arduino is connected to a laptop using a cable. Software Arduino is downloaded. The reading is voltage and needs to change to NTU. The formula to convert voltage to NTU is: 
-     
-NTU = -1120.4*$\sqrt(voltage)$ + 5742.3*voltage - 4353.8  
 
 
 
-
-![Figure 1: complete final tubidity meter setup](C:/Users/klin/Desktop/KL/Training/Master/Courses/UoG_Bioinstrumentation/Project/Report/picture/audrui.jpg)
-
-
-*Market Analysis*
->>>>>>> c2fcd8610a32382ea9f6ebf91678f7a28a79f80c
-
-    Drinking water and industrial water all require to pass stringent requirement prior to further using. There are many specificications that water needs to pass. One of requirement is Total Dissolved Solid (TDS) and it can measured through turbidity meter. Two types of turbidity meter are commonly used in the market including holdheld and benchtop. According to Future Market Insight, global turbidity meter will reach one billion US dollar in 2029 end. Handhold turbidity meters will reach 400 million by 2029 end. [1] This business proposal is targeting on handhold turbidity meter.  
+Drinking water and industrial water all require to pass stringent requirement prior to further using. There are many specificications that water needs to pass. One of requirement is Total Dissolved Solid (TDS) and it can measured through turbidity meter. Two types of turbidity meter are commonly used in the market including holdheld and benchtop. According to Future Market Insight, global turbidity meter will reach one billion US dollar in 2029 end. Handhold turbidity meters will reach 400 million by 2029 end. [1] This business proposal is targeting on handhold turbidity meter.  
 
 
 *Busniess Plan*  
@@ -86,6 +42,11 @@ knitr::kable(funding_body,caption = "Potential Funding bodies for Turbidity Mete
 
      Third stage is marketing step,I will call all of water related company to see they wants to try our new product. Below shows potential customers. In the early stage, I will send out emails to them or call them to promote this product. 
      
+microcontroller without using analog to digital converter. [1] In this paper, a turbidity meter prototype will be built. To achieve that, literatures will be reviewed and analyzed.
+
+
+
+
      
 ```{r}
 Company  <- c("Protected Elsius","Genome Alberta","Xenon Pharmaceuticals Inc", "Takeda Canada Inc","BIOTECanada","MaRS Discovery District","University of Waterloo","Merck Canada","Pfizer Canada Inc","Valeant Canada","BioAuxilium Research")
@@ -100,10 +61,32 @@ knitr::kable(customers)
 
     Forth stage is to proceed massive manufacture stage. A lab or manufacturing site will be used to manufacture these equipements. 
 
+**Circuit Design:**
+
+ Turbidity sensor has connected it analogous controller to obtain sensor reading. This signal needs to be furhter manipulated conditioned into human readable data. In this case, Analougue controller is connected to Arduino. Arduino is connected to a laptop using a cable. Software Arduino is downloaded. The reading is voltage and needs to change to NTU. The formula to convert voltage to NTU is: 
+   All of materials have ability to absorb light(sun light) in the form of wave. Human eye can detect light wavelenght between 400 nm and 700 nm. Ultravisible light is not detectable by human eye. Transmittance(T) is defined as amount of light pass through a water sample. Forumula is ratio between transmitted light (I) and light intensity $I_0$.  
+   
+   T = $\frac{I}{I_0}$ = $e^{-\tau}$ = $10^{-A}$  
+   where $\tau$ is optical depth or opacity of the medium. A is absorbance. 
+   
+   Formula can be further transform to  
+   
+   A = -10$log_{10}(10)$  
+   
+   Beer-Lamber law stats that  
+   
+   A = $\epsilon$ c l  
+   
+   where $\epsilon$ refers to absorptivity of the absorbers in suspension. Symbol c refers to concentration and symbol l referst to path length. Concentration of absorber multiply absorbtivity is attenuation coefficient denoted by $\sum$. Then equation becomes  
+   
+   
+A = $\sum$ l  
+   
+   photodiodes is a type of sensor. It's used transimpedance amplifier to convert current into output voltage. 
+   current flows from cathode into anode when light strikes photodiode's area. 
+   
 
 **Materials and Methods:**  
-
-
 
    All of materials have ability to absorb light(sun light) in the form of wave. Human eye can detect light wavelenght between 400 nm and 700 nm. Ultravisible light is not detectable by human eye. Transmittance(T) is defined as amount of light pass through a water sample. Forumula is ratio between transmitted light (I) and light intensity $I_0$.  
    
@@ -128,18 +111,17 @@ A = $\sum$ l
 
 *Turbidity Meter Circuit Design:*  
 
-     Principle of turbidity meter sensor is to use optic principle to estimate transmittance rate and scattering rate. It's similar to spectrometer which detects optical density. Water serves as blank for turbidity measurement. Phototransistor which is part of turbidity meter sensor and used to collect lights that pass through haze. photoresistor is the component that connects to the phototransistor. photodiodes is used to convert light into current because emitted sun light has photon. Photon is converted into electron which generates current. That's also the princinple of converting solar energy into electricity.  If light density is higher, it wil have hight signal. After it collects the light, it will generate current. It can be collected to a resistor followed by op-amp to boost signal. The output of phototransitor is defined as base area of it and current gain of transitor. The sensing element of turbidity sensor is photodiode. First, it generates signal in the order of uA. A high-gain, low-noise transimpdedance amplifier which is operational amplifier strength signal followed by low pass filter. Analouge to digital converter to interface of microcontroller. 
+ Principle of turbidity meter sensor is to use optic principle to estimate transmittance rate and scattering rate. It's similar to spectrometer which detects optical density. Water serves as blank for turbidity measurement. Phototransistor which is part of turbidity meter sensor and used to collect lights that pass through haze. photoresistor is the component that connects to the phototransistor. photodiodes is used to convert light into current because emitted sun light has photon. Photon is converted into electron which generates current. That's also the princinple of converting solar energy into electricity.  If light density is higher, it wil have hight signal. After it collects the light, it will generate current. It can be collected to a resistor followed by op-amp to boost signal. The output of phototransitor is defined as base area of it and current gain of transitor. The sensing element of turbidity sensor is photodiode. First, it generates signal in the order of uA. A high-gain, low-noise transimpdedance amplifier which is operational amplifier strength signal followed by low pass filter. Analouge to digital converter to interface of microcontroller. 
      
      
 
-     Sample has higher amount of haze or total suspended solid(TSS) will decrease light transmittance meaning the turbidity sensor reading is lower. Sample with lower amount of haze will have increase reading. The unit for turbidity meter is NTU.
+Sample has higher amount of haze or total suspended solid(TSS) will decrease light transmittance meaning the turbidity sensor reading is lower. Sample with lower amount of haze will have increase reading. The unit for turbidity meter is NTU.
      
-    The general flow of detecting equipment is sensing element, signal conditioning, filter, analog to digital converter and microcontroler. There are two turbididty sensors have been used in this project and comparison will be done to verify which one outperform (Figure 1-3). Analog signal output is sinusoidal and digital signal output is square signal in binary format. In otherwords latter one is discrete value. Keyestudio sensor has ability to change between these two modes. Analog signal band pass is low but digital signal band pass is high.   
+The general flow of detecting equipment is sensing element, signal conditioning, filter, analog to digital converter and microcontroler. There are two turbididty sensors have been used in this project and comparison will be done to verify which one outperform (Figure 1-3). Analog signal output is sinusoidal and digital signal output is square signal in binary format. In otherwords latter one is discrete value. Keyestudio sensor has ability to change between these two modes. Analog signal band pass is low but digital signal band pass is high.   
     
     
-      Turbidity sensor has connected it analogous controller to obtain sensor reading. This signal needs to be furhter manipulated conditioned into human readable data. In this case, Analougue controller is connected to Arduino. Arduino is connected to a laptop using a cable. Software Arduino is downloaded. The reading is voltage and needs to change to NTU. The formula to convert voltage to NTU is: 
+Turbidity sensor has connected it analogous controller to obtain sensor reading. This signal needs to be furhter manipulated conditioned into human readable data. In this case, Analougue controller is connected to Arduino. Arduino is connected to a laptop using a cable. Software Arduino is downloaded. The reading is voltage and needs to change to NTU. The formula to convert voltage to NTU is: 
      
-NTU = -1120.4*$\sqrt(voltage)$ + 5742.3*voltage - 4353.8  
 
 
 Any non-dissolved material in water can increase turbidity. when the light pass through photodiode to phototransitor in water, amount of light pass through depends on the total suspended solid.
