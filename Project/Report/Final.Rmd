@@ -1,14 +1,16 @@
 ---
-output: word_document
+output: pdf_document
 ---  
+\center
 
-ENGG 6150 Term Project 
-
-A cost-effective turbidity meter
-Student: Jian Bin(Kevin), Lin"  
+ENGG 6150 Term Project  
+**A cost-effective turbidity meter**  
+Student: Jian Bin(Kevin), Lin  
 Email: jlin17@uoguelph.ca  
 Instructor: Dr.Maher Bakri-Kassem  
 Date: Apr/22/2020   
+
+\center
 
 \newpage  
 
@@ -27,7 +29,7 @@ Drinking water and industrial water all require to pass stringent requirement pr
   In the first stage, a funding is required. Potential funding partner includes school enterpreship plan from guelph
 university. Canadian governemnt also provides funding for enterpreship. There are many funding body in Canada govern bodies( https://www.mentorworks.ca/what-we-offer/government-funding/funding-regions/ontario/). 
 
-```{r}
+```{r,echo=FALSE}
 Organization <- c("BDC Small Business Loan","BDC Newcomer Entrepreneur","Canada Small Business Financicing Program","MaRS Investment Accelerator Fund","OCE Market Readiness Program", "OCE Voucher Programs")
 
 Govern_body <- c("Federal","Federal","Federal","Ontario","Ontario","Ontario")
@@ -48,7 +50,7 @@ knitr::kable(funding_body,caption = "Table 1: Potential Funding bodies for Turbi
 
 
      
-```{r}
+```{r,echo=FALSE}
 Company  <- c("Protected Elsius","Genome Alberta","Xenon Pharmaceuticals Inc", "Takeda Canada Inc","BIOTECanada","MaRS Discovery District","University of Waterloo","Merck Canada","Pfizer Canada Inc","Valeant Canada","BioAuxilium Research")
 Location <- c("Alberta:Calgary","Alberta:Calgary","British Columbia:Burnaby","Ontarion:Oakville","Ontario:Ottawa","Ontario:Toronto","Ontario :Waterloo","Quebec:Kirkland","Quebec:Kirkland","Quebec:Montreal","Quebec:St Laurent")
 Category <- c("Industry Service & Support","Early stage biotechnology","Early stage biotechnology","Commercial biotechnolgoy","Industry Organization","Incubator & Accelerator","Research and Academia","Commercial biotechnology","Commercial biotechnology", "Industry Service & Support","Commercial biotechnology")
@@ -100,8 +102,9 @@ Turbidity sensor has connected it analogous controller to obtain sensor reading.
 
 
 Any non-dissolved material in water can increase turbidity. when the light pass through photodiode to phototransitor in water, amount of light pass through depends on the total suspended solid.All of materials have ability to absorb light(sun light) in the form of wave. Human eye can detect light wavelenght between 400 nm and 700 nm. Ultravisible light is not detectable by human eye. Transmittance(T) is defined as amount of light pass through a water sample. Forumula is ratio between transmitted light (I) and light intensity $I_0$ [2].  
-   
-   T = $\frac{I}{I_0}$ = $e^{-\tau}$ = $10^{-A}$  
+\center   
+T = $\frac{I}{I_0}$ = $e^{-\tau}$ = $10^{-A}$  
+\center   
    where $\tau$ is optical depth or opacity of the medium. A is absorbance. 
    
    Formula can be further transform to  
